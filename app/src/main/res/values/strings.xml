@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RealMockUp</string>
+    <string name="default_counter">0</string>
+    <string name="button_send">+1</string>
+    <string name="toggle_switch">Toggle Switch:</string>
+    <string name="display_button">DISPLAY</string>
+    <string name="access_id"> More Things To Do:</string>
+    <string name="access_qr_code_button">GENERATE QR CODE</string>
+    <string name="highlight_boxes">TAP TO HIGHLIGHT BOXES</string>
+    <string name="third_bootstrap_button">What\'s cereal?</string>
+    <string name="second_bootstrap_button">Milk before cereal</string>
+    <string name="first_bootstrap_button">Cereal before milk</string>
+    <string name="go_back_button">Back To Start Page</string>
+    <string name="qr_code_input_id">Type what you want to send via QR Code.</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.exampledemo.parsaniahardik.generate_qr_code.MainActivity">
+
+    <EditText
+        android:id="@+id/etqr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter String" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/access_qr_code_button" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="420dp"
+        android:layout_height="339dp"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

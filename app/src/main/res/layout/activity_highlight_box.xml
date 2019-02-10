@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bootstrap_gray_dark"
+    tools:context=".HighlightBox">
+
+    <View
+        android:id="@+id/rectangle0_0"
+        android:layout_width="179dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/default_rectangle"
+        android:onClick="rectangle0_0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle0_1"
+        android:layout_width="179dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/default_rectangle"
+        android:onClick="rectangle0_1"
+        app:layout_constraintStart_toEndOf="@+id/rectangle0_0"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle0_2"
+        android:layout_width="179dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/default_rectangle"
+        android:onClick="rectangle0_2"
+        app:layout_constraintStart_toEndOf="@+id/rectangle0_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle1_0"
+        android:layout_width="179dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/default_rectangle"
+        android:onClick="rectangle1_0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle0_0" />
+
+    <View
+        android:id="@+id/rectangle1_1"
+        android:layout_width="179dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/default_rectangle"
+        android:onClick="rectangle1_1"
+        app:layout_constraintStart_toEndOf="@+id/rectangle1_0"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle0_1" />
+
+    <View
+        android:id="@+id/rectangle1_2"
+        android:layout_width="179dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/default_rectangle"
+        android:onClick="rectangle1_2"
+        app:layout_constraintStart_toEndOf="@+id/rectangle1_1"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle0_2" />
+
+    <Button
+        android:id="@+id/backFromHighlightButton"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="goToHomeScreen"
+        android:text="@string/go_back_button"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/displayID"
+        android:layout_width="350dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="128dp"
+        android:text="@string/highlight_boxes"
+        android:textColor="@color/bootstrap_dropdown_divider"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bootstrap_gray_dark"
+    tools:context=".QRCode">
+
+    <EditText
+        android:id="@+id/qrInput"
+        android:layout_width="283dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/bootstrap_dropdown_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="QRString" />
+
+    <TextView
+        android:id="@+id/qrInputDisplayID"
+        android:layout_width="347dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/qr_code_input_id"
+        android:textColor="@color/bootstrap_dropdown_divider"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/qrCodeButton"
+        android:layout_width="277dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/clicked_rectangle"
+        android:onClick="goToHomeScreen"
+        android:text="@string/access_qr_code_button"
+        android:textColor="@color/bootstrap_dropdown_divider"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/qrCodeView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="112dp"
+        android:contentDescription="@string/access_qr_code_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeCopyDrawable" />
+
+    <Button
+        android:id="@+id/backFromQRButton"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="goToHomeScreen"
+        android:text="@string/go_back_button"
+        android:textColor="@color/bootstrap_brand_secondary_text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
